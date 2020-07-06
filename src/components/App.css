@@ -1,7 +1,6 @@
 body {
   background-color: #eaedf1;
   height: 50vh;
-  overflow-x: hidden;
 }
 
 .app-body {
@@ -31,4 +30,9 @@ body {
 
   z-index: 1;
   height: 30vh;
+}
+
+.provider-badge {
+  padding: 8px;
+  margin: 10px;
 }

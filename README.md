@@ -12,33 +12,41 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `Application Information`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> This application is created with create-react-app CLI, with typescript flag. I have taken an object oriented approach to build this application with Typescript with focus on component oriented and reusable code. A series of small components come together to form the entire application.
 
-### `yarn build`
+### `Application is split in following components`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- App (Class based) - This is the brain of the application, all the logic and data flows through this component.
+- Navbar (Functional) - This is a simple navbar component, which can be modified and reused when application is scaled.
+- User (Functional) - This component will consists of all the user information, like name, avatar etc.
+- Providers (Functional) - This component will show list of all the available providers with an option to add providers.
+- Current Providers (Functional) - This component will show the list of providers that user choose to add from list of available providers.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### `State Management`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Implemented React-Redux for managing the state, probably overkill for such a small application, however, I wanted to demonstrate my skills with Redux and it's complex concepts such as Reducers, Actions, enums etc.
+- Went with models approach, to mimic the data-structure for incoming data from API.
+- I used axios library to make request to the backend.
 
-### `yarn eject`
+### `UI Implementation`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Implemented React-Bootstrap, to implement UI elements of the application.
+- I have tried to work with some complex implementation for eg tables and lists.
+- Implemented a fake data library called as faker.js to have user avatar and random names for user.
+- Implemented Fontawesome for some icons.
+- Went ahead with plain CSS to keep things simple.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Thought Process`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> Here looking at the given problem, I felt it would be nice for an user to be able to look at all the available providers and their age and degree in order to make decision with they should be adding in their list.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `Room For Improvement`
 
-## Learn More
+- Responsive Design could be better
+- Implementation of Tests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `Additional Comments`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> I would like to thank you for giving me an opportunity to work on this assigment, I have always worked with React-Redux with traditional JS and Typescript with Angular, this was the first time, I got a chance to work with React-TypeScript combination. It was really fun and challenging to do this excercise. I got to learn a lot of new concepts. Thank you :)

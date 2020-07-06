@@ -10,6 +10,7 @@ import { TopNavbar } from './Navbar/Navbar';
 import { User } from './User/User';
 import { Providers } from './Providers/Providers';
 import { CurrentProviders } from './CurrentProviders/CurrentProviders';
+import { Badge } from 'react-bootstrap';
 
 export interface AppProps {
   doctors: Doctor[];
@@ -46,7 +47,9 @@ class _App extends React.Component<AppProps> {
     if (this.props.doctors.length > 0) {
       return (
         <div>
-          <h3> Available Providers </h3>
+          <Badge className='provider-badge' variant='primary'>
+            <h4> Available Providers </h4>
+          </Badge>{' '}
           <Providers
             providers={this.props.doctors}
             getTask={this.getTaskForDoctor}
@@ -60,7 +63,9 @@ class _App extends React.Component<AppProps> {
     if (this.currentProviders.length > 0) {
       return (
         <div>
-          <h3> Current Providers </h3>
+          <Badge className='provider-badge' variant='success'>
+            <h4> Current Providers </h4>
+          </Badge>{' '}
           <CurrentProviders
             currentProviders={this.currentProviders}
             task={this.props.task}
@@ -78,12 +83,7 @@ class _App extends React.Component<AppProps> {
           <User avatar={this.avatarURL} getDoctors={this.getAllDoctors} />
           <div className='providers'>
             <div className='available-providers'>{this.renderProviders()}</div>
-            <div
-              className='current-providers'
-              style={{
-                overflowY: this.currentProviders.length > 0 ? 'scroll' : 'auto',
-              }}
-            >
+            <div className='current-providers'>
               {' '}
               {this.renderCurrentProviders()}{' '}
             </div>

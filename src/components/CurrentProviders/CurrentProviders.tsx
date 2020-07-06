@@ -1,3 +1,4 @@
+import './CurrentProviders.css';
 import React from 'react';
 import { Doctor } from '../../models/Doctor';
 import {
@@ -29,7 +30,7 @@ export const CurrentProviders = (props: AppProps) => {
   componentDidMount();
 
   return (
-    <div>
+    <div className='scrollableProviders'>
       {props.currentProviders.map((cp) => {
         return (
           <Accordion key={cp.doctor_id}>
