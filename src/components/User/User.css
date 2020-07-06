@@ -1,0 +1,32 @@
+.user-info-card {
+  margin: 10px 20px 0px 20px;
+}
+
+.user-info {
+  width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 20px;
+  text-align: center;
+  border-color: gray;
+  margin-left: 40%;
+}
+
+.profile-img {
+  align-content: center;
+  height: max-content;
+}
+
+.user-details {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.add-providers {
+  padding: 20px;
+}
+
+#user-avatar {
+  border-radius: 50%;
+  margin-top: 20px;
+}
