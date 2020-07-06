@@ -47,7 +47,7 @@ class _App extends React.Component<AppProps> {
     if (this.props.doctors.length > 0) {
       return (
         <div>
-          <Badge className='provider-badge' variant='primary'>
+          <Badge className='provider-badge' variant='light'>
             <h4> Available Providers </h4>
           </Badge>{' '}
           <Providers
@@ -63,7 +63,7 @@ class _App extends React.Component<AppProps> {
     if (this.currentProviders.length > 0) {
       return (
         <div>
-          <Badge className='provider-badge' variant='success'>
+          <Badge className='provider-badge' variant='light'>
             <h4> Current Providers </h4>
           </Badge>{' '}
           <CurrentProviders
